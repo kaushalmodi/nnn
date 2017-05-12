@@ -21,8 +21,8 @@ static struct assoc assocs[] = {
 
 static struct key bindings[] = {
 	/* Quit */
-	{ 'q',            SEL_QUIT,      "",     "" },
-	{ 'Q',            SEL_CDQUIT,    "",     "" },
+	{ 'q',            SEL_QUIT,      "",            "" },
+	{ 'Q',            SEL_CDQUIT,    "",            "" },
 	/* Back */
 	{ KEY_BACKSPACE,  SEL_BACK,      "",            "" },
 	{ KEY_LEFT,       SEL_BACK,      "",            "" },
@@ -31,14 +31,12 @@ static struct key bindings[] = {
 	{ '^',            SEL_BACK,      "",            "" },
 	{ 'u',            SEL_BACK,      "",            "" },
 	/* Inside */
-	{ KEY_ENTER,      SEL_GOIN,      "",     "" },
-	{ '\r',           SEL_GOIN,      "",     "" },
-	{ KEY_RIGHT,      SEL_GOIN,      "",     "" },
-	{ 'l',            SEL_GOIN,      "",     "" },
+	{ KEY_ENTER,      SEL_GOIN,      "",            "" },
+	{ '\r',           SEL_GOIN,      "",            "" },
+	{ KEY_RIGHT,      SEL_GOIN,      "",            "" },
+	{ 'l',            SEL_GOIN,      "",            "" },
 	/* Filter */
-	{ '/',            SEL_FLTR,      "",     "" },
-	/* Desktop search */
-	{ CONTROL('_'),   SEL_SEARCH,    "",     "" },
+	{ '/',            SEL_FLTR,      "",            "" },
 	/* Next */
 	{ 'j',            SEL_NEXT,      "",            "" },
 	{ 'n',            SEL_NEXT,      "",            "" },
@@ -50,11 +48,11 @@ static struct key bindings[] = {
 	{ KEY_UP,         SEL_PREV,      "",            "" },
 	{ CONTROL('P'),   SEL_PREV,      "",            "" },
 	/* Page down */
-	{ KEY_NPAGE,      SEL_PGDN,      "",     "" },
-	{ CONTROL('D'),   SEL_PGDN,      "",     "" },
+	{ KEY_NPAGE,      SEL_PGDN,      "",            "" },
+	{ CONTROL('D'),   SEL_PGDN,      "",            "" },
 	/* Page up */
-	{ KEY_PPAGE,      SEL_PGUP,      "",     "" },
-	{ CONTROL('U'),   SEL_PGUP,      "",     "" },
+	{ KEY_PPAGE,      SEL_PGUP,      "",            "" },
+	{ CONTROL('U'),   SEL_PGUP,      "",            "" },
 	/* First entry */
 	{ KEY_HOME,       SEL_HOME,      "",            "" },
 	{ 'g',            SEL_HOME,      "",            "" },
@@ -67,40 +65,40 @@ static struct key bindings[] = {
 	{ '$',            SEL_END,       "",            "" },
 	{ '>',            SEL_END,       "",            "" },
 	/* Change dir */
-	{ 'c',            SEL_CD,        "",     "" },
+	{ 'c',            SEL_CD,        "",            "" },
 	/* HOME */
-	{ '~',            SEL_CDHOME,    "",     "" },
+	{ '~',            SEL_CDHOME,    "",            "" },
 	/* Initial directory */
-	{ '&',            SEL_CDBEGIN,   "",     "" },
+	{ '&',            SEL_CDBEGIN,   "",            "" },
 	/* Last visited dir */
-	{ '-',            SEL_CDLAST,    "",     "" },
+	{ '-',            SEL_CDLAST,    "",            "" },
 	/* Toggle hide .dot files */
-	{ '.',            SEL_TOGGLEDOT, "",     "" },
+	{ '.',            SEL_TOGGLEDOT, "",            "" },
 	/* Detailed listing */
-	{ 'd',            SEL_DETAIL,    "",     "" },
+	{ 'd',            SEL_DETAIL,    "",            "" },
 	/* File details */
-	{ 'D',            SEL_STATS,     "",     "" },
+	{ 'D',            SEL_STATS,     "",            "" },
 	/* Show mediainfo short */
-	{ 'm',            SEL_MEDIA,     "",     "" },
+	{ 'm',            SEL_MEDIA,     "",            "" },
 	/* Show mediainfo full */
-	{ 'M',            SEL_FMEDIA,    "",     "" },
+	{ 'M',            SEL_FMEDIA,    "",            "" },
 	/* Open dir in desktop file manager */
-	{ 'o',            SEL_DFB,       "",     "" },
+	{ 'o',            SEL_DFB,       "",            "" },
 	/* Toggle sort by size */
-	{ 's',            SEL_FSIZE,     "",     "" },
+	{ 's',            SEL_FSIZE,     "",            "" },
 	/* Sort by total block size including dir contents */
-	{ 'S',            SEL_BSIZE,    "",     "" },
+	{ 'S',            SEL_BSIZE,    "",             "" },
 	/* Toggle sort by time */
-	{ 't',            SEL_MTIME,     "",     "" },
-	{ CONTROL('L'),   SEL_REDRAW,    "",     "" },
+	{ 't',            SEL_MTIME,     "",            "" },
+	{ CONTROL('L'),   SEL_REDRAW,    "",            "" },
 	/* Copy currently selected file path */
 	{ CONTROL('K'),   SEL_COPY,      "",            "" },
 	{ 'w',            SEL_COPY,      "",            "" },
 	/* Show help */
-	{ '?',            SEL_HELP,      "",     "" },
+	{ '?',            SEL_HELP,      "",            "" },
 	/* Run command */
-	{ 'z',            SEL_RUN,       "top",  "" },
-	{ '!',            SEL_RUN,       "sh",   "SHELL" },
+	{ 'z',            SEL_RUN,       "top",         "" },
+	{ '!',            SEL_RUN,       "sh",          "SHELL" },
 	/* Run command with argument */
 	{ 'e',            SEL_RUNARG,    "vi",   "EDITOR" },
 	{ 'P',            SEL_RUNARG,    "less",        "PAGER" },
