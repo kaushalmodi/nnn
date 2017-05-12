@@ -56,9 +56,10 @@ static struct key bindings[] = {
 	{ KEY_PPAGE,      SEL_PGUP,      "",     "" },
 	{ CONTROL('U'),   SEL_PGUP,      "",     "" },
 	/* First entry */
-	{ KEY_HOME,       SEL_HOME,      "",     "" },
-	{ 'g',            SEL_HOME,      "",     "" },
-	{ CONTROL('A'),   SEL_HOME,      "",     "" },
+	{ KEY_HOME,       SEL_HOME,      "",            "" },
+	{ 'g',            SEL_HOME,      "",            "" },
+	{ CONTROL('A'),   SEL_HOME,      "",            "" },
+	{ '<',            SEL_HOME,      "",            "" },
 	/* Last entry */
 	{ KEY_END,        SEL_END,       "",     "" },
 	{ 'G',            SEL_END,       "",     "" },
