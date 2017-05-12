@@ -61,10 +61,11 @@ static struct key bindings[] = {
 	{ CONTROL('A'),   SEL_HOME,      "",            "" },
 	{ '<',            SEL_HOME,      "",            "" },
 	/* Last entry */
-	{ KEY_END,        SEL_END,       "",     "" },
-	{ 'G',            SEL_END,       "",     "" },
-	{ CONTROL('E'),   SEL_END,       "",     "" },
-	{ '$',            SEL_END,       "",     "" },
+	{ KEY_END,        SEL_END,       "",            "" },
+	{ 'G',            SEL_END,       "",            "" },
+	{ CONTROL('E'),   SEL_END,       "",            "" },
+	{ '$',            SEL_END,       "",            "" },
+	{ '>',            SEL_END,       "",            "" },
 	/* Change dir */
 	{ 'c',            SEL_CD,        "",     "" },
 	/* HOME */
