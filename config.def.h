@@ -40,9 +40,10 @@ static struct key bindings[] = {
 	/* Desktop search */
 	{ CONTROL('_'),   SEL_SEARCH,    "",     "" },
 	/* Next */
-	{ 'j',            SEL_NEXT,      "",     "" },
-	{ KEY_DOWN,       SEL_NEXT,      "",     "" },
-	{ CONTROL('N'),   SEL_NEXT,      "",     "" },
+	{ 'j',            SEL_NEXT,      "",            "" },
+	{ 'n',            SEL_NEXT,      "",            "" },
+	{ KEY_DOWN,       SEL_NEXT,      "",            "" },
+	{ CONTROL('N'),   SEL_NEXT,      "",            "" },
 	/* Previous */
 	{ 'k',            SEL_PREV,      "",     "" },
 	{ KEY_UP,         SEL_PREV,      "",     "" },
