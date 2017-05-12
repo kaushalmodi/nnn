@@ -94,7 +94,8 @@ static struct key bindings[] = {
 	{ 't',            SEL_MTIME,     "",     "" },
 	{ CONTROL('L'),   SEL_REDRAW,    "",     "" },
 	/* Copy currently selected file path */
-	{ CONTROL('K'),   SEL_COPY,      "",     "" },
+	{ CONTROL('K'),   SEL_COPY,      "",            "" },
+	{ 'w',            SEL_COPY,      "",            "" },
 	/* Show help */
 	{ '?',            SEL_HELP,      "",     "" },
 	/* Run command */
