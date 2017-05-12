@@ -45,9 +45,10 @@ static struct key bindings[] = {
 	{ KEY_DOWN,       SEL_NEXT,      "",            "" },
 	{ CONTROL('N'),   SEL_NEXT,      "",            "" },
 	/* Previous */
-	{ 'k',            SEL_PREV,      "",     "" },
-	{ KEY_UP,         SEL_PREV,      "",     "" },
-	{ CONTROL('P'),   SEL_PREV,      "",     "" },
+	{ 'k',            SEL_PREV,      "",            "" },
+	{ 'p',            SEL_PREV,      "",            "" },
+	{ KEY_UP,         SEL_PREV,      "",            "" },
+	{ CONTROL('P'),   SEL_PREV,      "",            "" },
 	/* Page down */
 	{ KEY_NPAGE,      SEL_PGDN,      "",     "" },
 	{ CONTROL('D'),   SEL_PGDN,      "",     "" },
@@ -99,5 +100,5 @@ static struct key bindings[] = {
 	{ '!',            SEL_RUN,       "sh",   "SHELL" },
 	/* Run command with argument */
 	{ 'e',            SEL_RUNARG,    "vi",   "EDITOR" },
-	{ 'p',            SEL_RUNARG,    "less", "PAGER" },
+	{ 'P',            SEL_RUNARG,    "less",        "PAGER" },
 };
