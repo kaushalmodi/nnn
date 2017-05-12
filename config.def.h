@@ -24,10 +24,12 @@ static struct key bindings[] = {
 	{ 'q',            SEL_QUIT,      "",     "" },
 	{ 'Q',            SEL_CDQUIT,    "",     "" },
 	/* Back */
-	{ KEY_BACKSPACE,  SEL_BACK,      "",     "" },
-	{ KEY_LEFT,       SEL_BACK,      "",     "" },
-	{ 'h',            SEL_BACK,      "",     "" },
-	{ CONTROL('H'),   SEL_BACK,      "",     "" },
+	{ KEY_BACKSPACE,  SEL_BACK,      "",            "" },
+	{ KEY_LEFT,       SEL_BACK,      "",            "" },
+	{ 'h',            SEL_BACK,      "",            "" },
+	{ CONTROL('H'),   SEL_BACK,      "",            "" },
+	{ '^',            SEL_BACK,      "",            "" },
+	{ 'u',            SEL_BACK,      "",            "" },
 	/* Inside */
 	{ KEY_ENTER,      SEL_GOIN,      "",     "" },
 	{ '\r',           SEL_GOIN,      "",     "" },
@@ -55,7 +57,6 @@ static struct key bindings[] = {
 	{ KEY_HOME,       SEL_HOME,      "",     "" },
 	{ 'g',            SEL_HOME,      "",     "" },
 	{ CONTROL('A'),   SEL_HOME,      "",     "" },
-	{ '^',            SEL_HOME,      "",     "" },
 	/* Last entry */
 	{ KEY_END,        SEL_END,       "",     "" },
 	{ 'G',            SEL_END,       "",     "" },
