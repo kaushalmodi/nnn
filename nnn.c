@@ -898,7 +898,7 @@ printent_long(struct entry *ent, int active)
 	else
 		ncols = COLS;
 
-	strftime(buf, 18, "%d %m %Y %H:%M", localtime(&ent->t));
+	strftime(buf, 18, "%Y/%m/%d %H:%M", localtime(&ent->t));
 
 	if (active)
 		attron(A_REVERSE);
