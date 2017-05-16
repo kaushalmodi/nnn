@@ -1646,14 +1646,14 @@ nochange:
 				}
 
 				/* If nlay doesn't handle it, open plain text
-				   files with vi, then try NNN_FALLBACK_OPENER */
+				   files with less, then try NNN_FALLBACK_OPENER */
 				if (get_output(g_buf, MAX_CMD_LEN, "file", "-bi",
 					       newpath, 0) == NULL)
 					continue;
 
 				if (strstr(g_buf, "text/") == g_buf) {
 					exitcurses();
-					run = xgetenv("EDITOR", "vi");
+					run = xgetenv("PAGER", "less");
 					spawn(run, newpath, NULL, NULL, 0);
 					initcurses();
 					continue;
