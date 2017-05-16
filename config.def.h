@@ -1,5 +1,5 @@
 /* See LICENSE file for copyright and license details. */
-#define CWD   "cwd: "
+#define CWD   "You are currently in "
 #define CURSR " > "
 #define EMPTY "   "
 
